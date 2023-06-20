@@ -6,12 +6,39 @@ import ListaNumeros from "./Componentes/ListaNumeros";
 import AumentaElementosArray from "./Componentes/AumentaElementosArray";
 import FormularioReactivo from "./Componentes/FormularioReactivo";
 import ReactHookFormsEjemplo from "./Componentes/ReactHookFormsEjemplo";
+import EjemploHookForm1 from "./Componentes/EjemploHookForm1";
+
+import EjemploProps from "./Componentes/EjemploProps";
+import Comentario from "./Componentes/Comentario";
 
 const App = () => {
+   const sujeto = {
+      nombre:"Andrés",
+      urlImagen:"https://placehold.co/64", 
+      comentario:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, cupiditate."
+   }
+
+   const sujeto2 = {
+      nombre: "Carolina",
+      urlImagen:"https://placehold.co/64",
+      comentario:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+   }  
+
+   const sujeto3 = {
+      nombre: "Neko",
+      urlImagen:"https://placehold.co/64",
+      comentario:"Soy el gato mas chimbita."
+   } 
    return (
     <div>
-
- <Contador2 />
+<EjemploProps sujeto2={sujeto2} />
+<Comentario sujeto={sujeto3}/>
+<Comentario sujeto={sujeto2}/>
+<Comentario sujeto={sujeto}/>
+<hr></hr>    
+<EjemploHookForm1 /> 
+<hr></hr>
+<ReactHookFormsEjemplo /> 
  <hr></hr>
  <Formulario /> 
  <hr></hr>
@@ -23,7 +50,7 @@ const App = () => {
  <hr></hr>
  <FormularioReactivo />
  <hr></hr>
- <ReactHookFormsEjemplo /> 
+ <Contador2 />
     </div>
   );
 };
