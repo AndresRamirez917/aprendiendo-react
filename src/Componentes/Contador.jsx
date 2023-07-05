@@ -7,7 +7,7 @@ const Contador = () => {
        
     }
   return (
-    <>
+    <React.Fragment>
     <h2>Contador para ejemplo de uso de Hooks con useState</h2>
     <p>El contador es un componente que usa el useState para actualizar el renderizado
         del DOM, de otra forma el contador no se pintaria cada vez que se hace click en 
@@ -17,7 +17,7 @@ const Contador = () => {
     </p>
       <h2>{contador}</h2>
       <button className='btn btn-dark' onClick={aumentaClick}>Aumentar</button>
-    </>
+    </React.Fragment>
   )
 }
 

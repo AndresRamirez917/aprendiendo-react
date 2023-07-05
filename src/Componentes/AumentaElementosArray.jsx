@@ -11,7 +11,7 @@ const AumentaElementosArray = () => {
   return (
     
     <div className='container mt-4 mb-4'>
-        <>
+        <React.Fragment>
         <h1>Agregar un elemento a un array usando dos useState</h1>
         <p>En este componente se usaron dos useState para demostrar que no hay límite en el uso de estos, el primero de ellos
             se uso como array que almacena los elementos 1,2,3. el segundo array como número a ingresar (4) usando su setState se
@@ -24,7 +24,7 @@ const AumentaElementosArray = () => {
             ))}
         
       <button className='btn btn-dark' onClick={agregaNumero}>Agregar número</button>
-        </>
+        </React.Fragment>
      
     </div>
   )

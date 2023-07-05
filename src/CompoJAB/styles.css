@@ -1,0 +1,276 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ejercicio cajas reyes unidad 1 */
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.caja{
+  /* width: 60%; */
+    background-color: goldenrod;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    border: solid black 1px;
+    padding: 10px;
+    user-select: none;
+    color: white;
+}
+
+.contenedor h1{
+    color: white;
+} 
+
+img{
+    width: 100%;
+}
+
+/* estilos caja sumadora unidad 3 */
+.cajaSumadora{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   font-size: 3rem;
+}
+
+.cajaSumadora .inpt{
+    height: 100px;
+    font-weight: bold;
+    color: orangered;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cajaSumadora button{
+    margin-left: 10px;
+}
+
+/* Ejercicio aficiones reyes unidad 3 */
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+/* Ejercicio props unidad 4 */
+.appContainer{
+    display: flex;
+    justify-content: space-evenly;
+   flex-wrap: wrap;
+
+}
+
+/* Ejercicio unidad 5 */
+.unidad5Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-auto-rows: minmax(200px);
+    background-color: red;
+}
+
+.unidad5Container .img{
+    width: 100%;
+}
+
+
+/* Ejercicio filter */
+.FilterContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    background-color: blue;
+}
+
+
+.FILTERtitulo{
+color: white;
+font-size: 2rem;
+text-align: center;
+}
+
+/* Ejercicio divisas */
+.divisaStyle{
+    background-color: greenyellow;
+}
+
+/* Ejercicio afiReyes */
+.afiReyesStyles{
+    background-color: rgba(165, 42, 42, 0.527);
+}
+
+
+/* Ejercicio sumador */
+.sumadorStyles{
+    background-color: rgb(80, 5, 87);
+}
+
+
+/* Ejercicio reyes unidad 1 */
+.ejerReyesUnid1Styles{
+    background-color: chocolate;
+}
+
+
+/* Ejercicio unidad 2 */
+.ejerUnidad2Styles{
+    background-color: darkblue;
+}
+
+/* Ejercicio filter 2 */
+.FilterContainer2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    background-color: crimson;
+}
+
+.FilterContainer2 .maricom{
+width: 100%;
+}
+
+
+/* Ejercicio find */
+.FindContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    background-color: blueviolet;
+}
+
+
+/* Ejercicio fetch */
+.fetchStyles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: gray;
+}
+
+.fetchStyles h1{
+    margin-bottom: 10px;
+}
+
+.fetchStyles img{
+    width: 20%;
+    height:20%;
+    margin-bottom: 10px;
+}
+
+
+/* Ejercicio fetch 2 problema al pintar número de elementos */
+.fetch2Styles img{
+    width: 20%;
+    height: 20%;
+    margin-bottom: 10px;
+}
+
+.fetch2Styles{
+    text-align: center;
+    background-color: darkslategray;
+    color:white;
+}
+
+.borderJoke{
+    border: black solid 1px;
+    background-color: rgba(0, 0, 255, 0.315);
+    padding: 30px 30px;
+}
+
+
+/* ejercicio 1 contexto unidad7 */
+.contextStyles{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: yellowgreen;
+    height: calc(100vh - 30px);
+   
+}
+
+.hijo{
+    width: 33.3%;
+    border: solid black 1px;
+    text-align: center;
+   
+}
+
+.colores{
+    display: flex;
+}
+
+.color{
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.color:nth-child(1){
+background-color: blue;
+}
+
+.color:nth-child(2){
+    background-color:orange;
+}
+
+.color:nth-child(3){
+  background-color: yellow
+}
+
+.color:nth-child(4){
+  background-color: green
+}
+/* ejercicio 2 contexto unidad 7 */
+
+.bandera{
+    width: 125px;
+    margin: 10px;
+}
+
+.imagen{
+    width: 100%;
+    vertical-align: top;
+}
+
+.idiomas{
+    display: flex;
+    justify-content: center;
+}
+
+.botones{
+    text-align: center;
+}
+
+.botones button{
+    width:150px;
+    background-color: white;
+    padding: 5px 8px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px dotted black;
+    color: rgb(119, 17, 17);
+    background-color: teal;
+    font-size: 1.05em;
+}
+
+.profesora, .ubicacion{
+    width: 320px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: teal;
+    padding-bottom: 15px;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+}

@@ -3,9 +3,9 @@ import React from 'react'
 const Avatar = ({urlImagen}) => {
   return (
 
-        <>
+        <React.Fragment>
         <img src={urlImagen} alt="avatar" className='mr-3' />
-        </>
+        </React.Fragment>
 
   )
 }

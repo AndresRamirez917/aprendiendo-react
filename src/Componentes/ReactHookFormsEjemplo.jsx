@@ -1,6 +1,7 @@
 import React from 'react'
 import {useForm} from "react-hook-form"
 import { useState } from 'react';
+import {titulo} from "react"
 
 const ReactHookFormsEjemplo = () => {
     const {register, handleSubmit, formState: { errors } } = useForm();
@@ -14,7 +15,7 @@ const ReactHookFormsEjemplo = () => {
    
   return (
     <div className='container text text-black'>
-        <>
+        <React.Fragment>
         <h1>Ejemplo del uso de React Hook Form</h1>
         <p>Para usar react hook form se debe de instalar el paquete, luego usar register, handleSubmit, formState:  errors  = useForm(), 
         importar el useForm. Luego se crea el form que contendra los inputs, al form se le pasa la función onSubmit que almacenará el 
@@ -73,7 +74,7 @@ const ReactHookFormsEjemplo = () => {
 
 
 
-        </>
+        </React.Fragment>
     </div>
   )
 }

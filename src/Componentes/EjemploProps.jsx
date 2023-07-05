@@ -3,7 +3,7 @@ import React from 'react'
 const EjemploProps = ({sujeto2}) => {
   return (
     <div className='container text text-warning'>
-        <>
+        <React.Fragment>
         <h1>Ejemplo props y comunicación entre componentes</h1>
         <p>EjemploProps, Avatar y Comentario hacen parte de un mismo ejercicio, desde App.jsx cremos un objeto de nombre sujeto y le 
             creamos 3 propiedades, llamamos el componente Comentario para pintarlo, pero creamos una espece de instancia del objeto sujeto 
@@ -13,10 +13,10 @@ const EjemploProps = ({sujeto2}) => {
             imagen y luego se llamará en el componente Comentario como un prop
         </p>
         <p>
-            Por cada objeto que exista se creará un componente con todos sus datos
+            Por cada objeto que exista se creará un componente con todos sus
         </p>
     <h2>Hola {sujeto2.nombre} tu comentario fue {sujeto2.comentario}</h2>
-        </>
+        </React.Fragment>
       
     </div>
   )

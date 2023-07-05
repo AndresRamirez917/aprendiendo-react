@@ -30,7 +30,7 @@ const FormularioReactivo = () => {
   };
   return (
     <div className="container mt-4 mb-4 text text-warning">
-      <>
+      <React.Fragment>
         <h1>Formulario Reactivo</h1>
         <p>
           Formulario reactivo que funciona igual con un useState, los inputs
@@ -76,7 +76,7 @@ const FormularioReactivo = () => {
             </button>
           </div>
         </form>
-      </>
+      </React.Fragment>
     </div>
   );
 };

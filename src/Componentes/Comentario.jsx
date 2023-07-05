@@ -5,7 +5,7 @@ import Avatar from './Avatar'
 const Comentario = ({sujeto}) => {
   return (
     <div className='container text text-warning'>
-      <>
+      <React.Fragment>
       <h1>Componente Comentario {sujeto.nombre}</h1>
       <div className='media'>
         {/* <img src={sujeto.urlImagen} alt="" className='mr-3' /> */}
@@ -15,7 +15,7 @@ const Comentario = ({sujeto}) => {
     <p>{sujeto.comentario}</p>
     </div>
       </div>
-      </>
+      </React.Fragment>
     </div>
   )
 }
