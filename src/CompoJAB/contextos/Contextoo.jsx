@@ -1,4 +1,4 @@
 import React, { createContext } from "react";
 
-const Contexto = createContext();
-export default Contexto;
+const Contextoo = createContext();
+export default Contextoo;

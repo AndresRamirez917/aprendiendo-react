@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Contexto } from "./contextos/Contexto";
+import { Contexto } from '../contextos/Contexto';
 
 const Pagina3= () => {
     const {color}=useContext(Contexto)

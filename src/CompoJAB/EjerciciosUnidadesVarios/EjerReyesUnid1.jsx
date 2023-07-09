@@ -1,9 +1,9 @@
 import React from "react"
-import imagen0 from "./reyes/rey_atanagildo.png"
-import imagen1 from "./reyes/rey_leogivildo.png"
-import imagen2 from "./reyes/rey_sisebuto.png"
-import anonimous from "./reyes/rey_incognito.png"
-import "./styles.css"
+import imagen0 from "../reyes/rey_atanagildo.png"
+import imagen1 from "../reyes/rey_leogivildo.png"
+import imagen2 from "../reyes/rey_sisebuto.png"
+import anonimous from "../reyes/rey_incognito.png"
+import "../styles.css"
 
 const EjerReyesUnid1 = () => {
     const name0 = "Atanagildo";

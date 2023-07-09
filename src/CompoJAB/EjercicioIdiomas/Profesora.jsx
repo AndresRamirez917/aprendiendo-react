@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import marta from "./images/marta.PNG"
-import Contexto  from './contextos/Contextoo'
+import marta from "../images/marta.PNG"
+import Contexto  from '../contextos/Contextoo'
 
 const Profesora = () => {
   const {alumno} = useContext(Contexto)

@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Contexto } from './contextos/Contexto'
+import { Contexto } from '../contextos/Contexto';
 const Colores = () => {
   const {setColor} = useContext(Contexto)
   //setColor se importa desde Contexto a través de useContext 

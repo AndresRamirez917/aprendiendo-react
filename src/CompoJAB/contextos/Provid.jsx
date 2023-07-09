@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Contexto from "./Contextoo";
+import Contextoo from "./Contextoo";
 
 const valores=[{
     titulo:"Aprenda React intensivamente con una profesora nativa",
@@ -33,9 +33,9 @@ const valores=[{
 const Provid = function({children}){
     const[alumno, setAlumno] = useState(valores);
     return(
-        <Contexto.Provider value ={{alumno,setAlumno}}>
+        <Contextoo.Provider value ={{alumno,setAlumno}}>
         {children}
-        </Contexto.Provider>
+        </Contextoo.Provider>
     )
 }
 

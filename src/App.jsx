@@ -12,42 +12,60 @@
 
 import React from "react";
 import { useState } from "react";
-import EjerReyesUnid1 from "./CompoJAB/EjerReyesUnid1";
-import EjersUnidad2 from "./CompoJAB/EjersUnidad2";
-import SumadoraUnidad3 from "./CompoJAB/SumadoraUnidad3";
-import AfiReyesUnidad3 from "./CompoJAB/AfiReyesUnidad3";
-import { CamDivisasUnidad3 } from "./CompoJAB/CamDivisasUnidad3";
-import EjerUnidad4 from "./CompoJAB/EjerUnidad4";
+import EjerReyesUnid1 from "./CompoJAB/EjerciciosUnidadesVarios/EjerReyesUnid1";
+import EjersUnidad2 from "./CompoJAB/EjerciciosUnidadesVarios/EjersUnidad2";
+import SumadoraUnidad3 from "./CompoJAB/EjerciciosUnidadesVarios/SumadoraUnidad3";
+import AfiReyesUnidad3 from "./CompoJAB/EjerciciosUnidadesVarios/AfiReyesUnidad3";
+import { CamDivisasUnidad3 } from "./CompoJAB/EjerciciosUnidadesVarios/CamDivisasUnidad3";
+import EjerUnidad4 from "./CompoJAB/EjerciciosUnidadesVarios/EjerUnidad4";
 import { Fragment } from "react";
 import "./CompoJAB/styles.css"
-import Ejer1MAPUnidad5 from "./CompoJAB/Ejer1MAPUnidad5";
-import EjerFILTERunidad5 from "./CompoJAB/EjerFILTERunidad5";
-import EjerFINDUnidad5 from "./CompoJAB/EjerFINDUnidad5";
-import EjerFILTER2Unid5 from "./CompoJAB/EjerFILTER2Unid5";
-import EjerFETCHunidad6 from "./CompoJAB/EjerFETCHunidad6";
-import EjerFETCH2Unidad6 from "./CompoJAB/EjerFETCH2Unidad6";
-import EjerFETCH3Unidad6 from "./CompoJAB/EjerFETCH3Unidad6";
-import EjerFETCH4Unidad6 from "./CompoJAB/EjerFETCH4Unidad6";
+import Ejer1MAPUnidad5 from "./CompoJAB/EjerciciosUnidadesVarios/Ejer1MAPUnidad5";
+import EjerFILTERunidad5 from "./CompoJAB/EjerciciosUnidadesVarios/EjerFILTERunidad5";
+import EjerFINDUnidad5 from "./CompoJAB/EjerciciosUnidadesVarios/EjerFINDUnidad5";
+import EjerFILTER2Unid5 from "./CompoJAB/EjerciciosUnidadesVarios/EjerFILTER2Unid5";
+import EjerFETCHunidad6 from "./CompoJAB/EjerciciosUnidadesVarios/EjerFETCHunidad6";
+import EjerFETCH2Unidad6 from "./CompoJAB/EjerciciosUnidadesVarios/EjerFETCH2Unidad6";
+import EjerFETCH3Unidad6 from "./CompoJAB/EjerciciosUnidadesVarios/EjerFETCH3Unidad6";
+import EjerFETCH4Unidad6 from "./CompoJAB/EjerciciosUnidadesVarios/EjerFETCH4Unidad6";
 
 // mismo ejercicio
-import Pagina1 from "./CompoJAB/Pagina1";
-import Pagina2 from "./CompoJAB/Pagina2";
-import Pagina3 from "./CompoJAB/Pagina3";
-import Colores from "./CompoJAB/Colores";
+import Pagina1 from "./CompoJAB/EjercicioColores/Pagina1";
+import Pagina2 from "./CompoJAB//EjercicioColores/Pagina2";
+import Pagina3 from "./CompoJAB//EjercicioColores/Pagina3";
+import Colores from "./CompoJAB//EjercicioColores/Colores";
 import { Datos } from "./CompoJAB/contextos/Contexto";
 // mismo ejercicio
 
 // mismo ejercicio
-import Idiomas from "./CompoJAB/Idiomas";
-import Pagina from "./CompoJAB/Pagina"
+import Idiomas from "./CompoJAB/EjercicioIdiomas/Idiomas";
+import Pagina from "./CompoJAB/EjercicioIdiomas/Pagina"
 import Provid  from "./CompoJAB/contextos/Provid";
 // mismo ejercicio
 
+//mismo ejercicio
 import A from "./CompoJAB/Paginas/A";
 import B from "./CompoJAB/Paginas/B";
 import C from "./CompoJAB/Paginas/C";
+import D from "./CompoJAB/Paginas/D";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Error404 from "./CompoJAB/Paginas/Error404";
+import Nav from "./CompoJAB/Paginas/Nav";
+//mismo ejercicio
+
+//mismo ejercicio
+import Atanagildo from "./CompoJAB/SPAReyes/Atanagildo";
+import Ataulfo from "./CompoJAB/SPAReyes/Ataulfo";
+import Recesvinto from "./CompoJAB/SPAReyes/Recesvinto";
+import Nav2 from "./CompoJAB/SPAReyes/Nav2";
+import Err404 from "./CompoJAB/SPAReyes/Err404";
+//mismo ejercicio
+
+//mismo ejercicio
+import Nav3 from "./CompoJAB/SPAReyes2/Nav3";
+import Home from "./CompoJAB/SPAReyes2/Home";
+import Modelo from "./CompoJAB/SPAReyes2/Modelo"
+//mismo ejercicio
 
 const App = () =>{
     
@@ -102,8 +120,8 @@ vacasConsumidas: 5
 },
 {
     id: 5,
-nombre:"Teodorico",
-imagen:"http://www.html6.es/img/teodorico.png", 
+nombre:"Teodorico el gay",
+imagen:"http://www.html6.es/img/rey_incognito.png", 
 precio:65,
 color:"red",
 reinado:15,
@@ -112,16 +130,42 @@ vacasConsumidas: 9
     return(
         <Fragment>
 
-            <div>
+|           <div className="SPA2">
                 <BrowserRouter>
+                <Nav3/>
                 <Routes>
-                    {/* página por defecto-+- */}
+                <Route path="/" element={<Home/>}></Route>
+                <Route path="/reyes/:rey" element={<Modelo />}></Route>
+                </Routes>
+                </BrowserRouter>
+            </div>
+
+
+            <div className="SPAReyesSimple">
+                <BrowserRouter>
+                <Nav2/>
+                <Routes>
+                <Route path="/" element={<Atanagildo reyes={datosReyes}/>}  ></Route>
+                <Route path="Ataulfo" element={<Ataulfo reyes={datosReyes}/>}></Route>
+                <Route path="Recesvinto" element={<Recesvinto reyes={datosReyes}/>}></Route>
+                <Route path="*" element={<Err404/>}></Route>
+                </Routes>
+                </BrowserRouter>
+            </div>
+
+            <div className="madre">
+                <BrowserRouter>
+                <Nav/>
+                <Routes>             
+                    {/* página por defecto */}
                     <Route path="/" element={<A/>}></Route>
                     <Route path="/pagina2" element={<B/>}></Route>
                     <Route path="/pagina3" element={<C/>}></Route>
-                    {/* sino encuentra ninguna de las otras páginas entonces error */}
+                    <Route path="/pagina4/:letra" element={<D/>}></Route>
+                    <Route path="/pagina1" element={<A/>}></Route>
+                    {/* si la página no está entre las permitidas */}
                     <Route path="*" element={<Error404/>}></Route>
-                </Routes>
+                </Routes> 
                 </BrowserRouter>
             </div>
 

@@ -1,7 +1,7 @@
 import React, { Fragment, useRef } from 'react';
-import imagen0 from "./reyes/rey_atanagildo.png";
-import imagen1 from "./reyes/rey_leogivildo.png";
-import "./styles.css";
+import imagen0 from "../reyes/rey_atanagildo.png";
+import imagen1 from "../reyes/rey_leogivildo.png";
+import "../styles.css";
 
 const  EjersUnidad2 = () => {
 

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import Contexto from './contextos/Contextoo'
+import Contextoo from '../contextos/Contextoo'
 
 const Ubicacion = () => {
-const {alumno}=useContext(Contexto)
+const {alumno}=useContext(Contextoo)
 const idioma=alumno[3].idioma
   return (
     <div className='ubicacion'>

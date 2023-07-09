@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 /* Ejercicio cajas reyes unidad 1 */
 .contenedor{
     display: flex;
@@ -274,3 +275,95 @@ background-color: blue;
     margin: auto;
     margin-bottom: 20px;
 }
+
+/* .stylesPrimerEjer7 a{
+    background-color: black;
+    padding: 10px;
+    color: white;
+margin: 3px;
+text-decoration:none;
+}
+
+a{
+    background-color: red;
+   text-decoration: none;
+}
+
+ */
+
+ .muestraLetra{
+    font-size: 5rem;
+    }
+
+    .navE-1U-7 a{
+        background-color: black;
+        color: white;
+        padding: 10px;
+       margin: 1px;
+       border-radius: 10px;
+       text-decoration: none;
+    }
+
+    .activo{
+        color: brown;
+    }
+
+    .h6Style{
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        width: max-content;
+    }
+
+
+.SPAReyesSimple{
+    background-color: gray;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.SPAReyesSimple .activeishon{
+    background-color: black;
+    color: white;
+    margin: 1px;
+    padding: 10px;
+    margin-bottom: 100px;
+    text-decoration: none;
+}
+
+.SPAReyesSimple img{
+    width: 30%;
+    height: 10%;
+}
+
+.SPAReyesSimple .caja{
+    width: 400px;
+}
+
+.errorSPAReyesSimple{
+font-size: 3rem;
+}
+
+.activeishon:hover{
+    background-color: red;
+    color: black;
+}
+
+.SPA2 a{
+    background-color: rgb(114, 111, 111);
+    color: white;
+    padding: 10px;
+}
+
+.SPA2 .caja{
+    width: 400px;
+}
+
+
+
+
+

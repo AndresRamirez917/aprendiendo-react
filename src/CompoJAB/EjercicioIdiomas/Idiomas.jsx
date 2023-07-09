@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import españa from "./images/spain.jpg"
-import francia from "./images/francia.png"
-import reinoUnido from "./images/uk.png"
-import Contexto from './contextos/Contextoo'
-import Provid from './contextos/Provid'
+import españa from "../images/spain.jpg"
+import francia from "../images/francia.png"
+import reinoUnido from "../images/uk.png"
+import Contextoo from '../contextos/Contextoo'
+import Provid from '../contextos/Provid'
 
 const Idiomas = () => {
-  const {setAlumno}=useContext(Contexto)
-  const {alumno}=useContext(Contexto)
+  const {setAlumno}=useContext(Contextoo)
+  const {alumno}=useContext(Contextoo)
   const sustitucion =(posicion)=>{
     setAlumno(
       alumno.map((dato, indice)=>

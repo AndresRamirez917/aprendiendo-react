@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react'
-import Contexto from './contextos/Contextoo'
+import Contexto from '../contextos/Contextoo'
 import Profesora from './Profesora'
+// import Ubicacion from '../Ubicacion'
 import Ubicacion from './Ubicacion'
 
 
