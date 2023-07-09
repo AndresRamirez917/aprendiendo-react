@@ -67,6 +67,10 @@ import Home from "./CompoJAB/SPAReyes2/Home";
 import Modelo from "./CompoJAB/SPAReyes2/Modelo"
 //mismo ejercicio
 
+import Calendario from "./CompoJAB/UseReducerUnidad9/Calendario";
+
+import Productos from "./CompoJAB/UseReducerUnidad9/Productos";
+
 const App = () =>{
     
 //                                  paso 2
@@ -129,6 +133,10 @@ vacasConsumidas: 9
 }]
     return(
         <Fragment>
+
+            <Productos/>
+
+            <Calendario/>
 
 |           <div className="SPA2">
                 <BrowserRouter>
