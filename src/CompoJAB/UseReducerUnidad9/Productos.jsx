@@ -1,5 +1,6 @@
 import React, { Fragment, useRef } from 'react'
 import { useState, useReducer } from 'react'
+import "../styles.css"
 
 const types = {
     mas : "mas",
@@ -43,30 +44,36 @@ const Productos = () => {
 
   return (
     <Fragment>
-    <div>
+
         <h1>Productos</h1>
         <label htmlFor="producto"></label>
-        <input id="producto" type="text" ref={inputName} value={miProducto} onChange={(e)=>setMiProducto(e.target.value)}  />
+        <input className='productoInput' id="producto" type="text" ref={inputName} value={miProducto} onChange={(e)=>setMiProducto(e.target.value)}  />
         <button onClick={() => {
          inputName.current.focus();
          setMiProducto("")   
         // const newId = lista[lista.length-1].id +1;
         dispatch({type: types.comprar, payload: {id: Date.now(), nombre:miProducto, cantidad:1}})
     }}>Añadir Producto</button>
-
-{
-lista.map(producto=>
-    <div key={producto.id}>
-        {producto.nombre} - {producto.cantidad}
+{lista.map((producto)=>
+<div key={producto.id}>
+Nombre de producto: <span className='verde'>{producto.nombre.substring(0,1).toUpperCase() + producto.nombre.substring(1)}</span> Cantidad = <span className='verde'>{producto.cantidad}</span> unidad/es
         <button onClick={()=>dispatch({type:types.mas, payload:producto.id})}>+</button>
         <button onClick={()=>dispatch({type:types.menos, payload:producto.id})}>-</button>
         <button onClick={()=>dispatch({type:types.eliminar, payload:producto.id})}>x</button>
     </div>
 )
 }
-    </div>
+
     </Fragment>
   )
 }
+
+{/* {lista.map((producto)=>
+<div key={producto.id}>
+{producto.nombre} ({producto.cantidad} unidaddes)
+<button onClick={()=>dispatch({type:types.menos,payload:producto.id})}>-</button>
+<button onClick={()=>dispatch({type:types.mas,payload:producto.id})}>+</button>
+<button onClick={()=>dispatch({type:types.eliminar,payload:producto.id})}>x</button>
+</div>)} */}
 
 export default Productos

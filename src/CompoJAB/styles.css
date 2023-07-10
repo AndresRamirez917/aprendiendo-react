@@ -57,10 +57,12 @@ img{
 /* Ejercicio aficiones reyes unidad 3 */
 .rojo{
     color: red;
+    font-weight: bold;
 }
 
 .verde{
     color: green;
+    font-weight: bold;
 }
 
 /* Ejercicio props unidad 4 */
@@ -361,6 +363,27 @@ font-size: 3rem;
 
 .SPA2 .caja{
     width: 400px;
+}
+
+.stylesProductos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.stylesProductos .productoInput{
+    border: black solid 3px;
+    width: 200px;
+  
+}
+
+.stylesProductos button{
+    margin-left: 10px;
 }
 
 

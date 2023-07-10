@@ -133,9 +133,9 @@ vacasConsumidas: 9
 }]
     return(
         <Fragment>
-
+            <div className="stylesProductos">
             <Productos/>
-
+            </div>
             <Calendario/>
 
 |           <div className="SPA2">
