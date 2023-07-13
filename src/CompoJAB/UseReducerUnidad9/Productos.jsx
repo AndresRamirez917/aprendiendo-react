@@ -34,7 +34,7 @@ const reducer = (state, action)=>{
             return state;
         
     }
-    return state;
+    //return state;
 }
 
 const Productos = () => {
@@ -68,12 +68,5 @@ Nombre de producto: <span className='verde'>{producto.nombre.substring(0,1).toUp
   )
 }
 
-{/* {lista.map((producto)=>
-<div key={producto.id}>
-{producto.nombre} ({producto.cantidad} unidaddes)
-<button onClick={()=>dispatch({type:types.menos,payload:producto.id})}>-</button>
-<button onClick={()=>dispatch({type:types.mas,payload:producto.id})}>+</button>
-<button onClick={()=>dispatch({type:types.eliminar,payload:producto.id})}>x</button>
-</div>)} */}
 
 export default Productos

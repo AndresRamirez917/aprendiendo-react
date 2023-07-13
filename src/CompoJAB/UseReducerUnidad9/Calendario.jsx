@@ -15,16 +15,18 @@ const reducer = (state, action)=>{
     let nextYear = state.a;
     switch(action.type){
         case opciones.mesmas:
-            nextMonth = nextMonth==11 ? 0 : nextMonth + 1
+            nextMonth = nextMonth===11 ? 0 : nextMonth + 1
             break;
         case opciones.mesmenos:
-            nextMonth = nextMonth==0 ? 11 : nextMonth - 1
+            nextMonth = nextMonth===0 ? 11 : nextMonth - 1
             break;
         case opciones.añomas:
             nextYear = nextYear + action.payload // payload es el valor que aumenta 
             break;                               // o disminuye los años
         case opciones.añomenos:
             nextYear = nextYear - action.payload
+            break;
+        default:
         }
 return {m:nextMonth, a:nextYear}
 }
@@ -37,7 +39,7 @@ const [unidades, setUnidades] = useState(1)
     <Fragment>
     <div>
         <h1>Calendario</h1>
-    <div style={(fecha.m<month && fecha.a<=year || fecha.a<year)?{color:"red"} : {color:"green"}}>
+    <div style={(fecha.m<month && fecha.a<=year) || (fecha.a<year)?{color:"red"} : {color:"green"}}>
         {meses[fecha.m].toUpperCase()} ({fecha.a}) 
    <div>
     Meses: <button onClick={()=>dispatch({type:opciones.mesmas})}>+</button>

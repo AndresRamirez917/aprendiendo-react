@@ -386,6 +386,48 @@ font-size: 3rem;
     margin-left: 10px;
 }
 
+.styloEjer1Unidad10 a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+    font-size: 0.66em;
+}
+
+.styloEjer1Unidad10{
+    background-color: black;
+}
+
+.styloEjer2Unidad10 nav{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.styloEjer2Unidad10 a{
+    color: white;
+    font-size: 0.8em;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.styloEjer2Unidad10 button{
+    padding: 3px;
+}
+
+.styloEjer2Unidad10 .active{
+    color: orangered;
+}
+
+.styloEjer2Unidad10 .activeishon2{
+    text-decoration: none;
+}
+
+.lista img{
+    width: 300px;
+    height:300px;
+}
+
 
 
 

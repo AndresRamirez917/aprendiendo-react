@@ -3,7 +3,7 @@ import españa from "../images/spain.jpg"
 import francia from "../images/francia.png"
 import reinoUnido from "../images/uk.png"
 import Contextoo from '../contextos/Contextoo'
-import Provid from '../contextos/Provid'
+//import Provid from '../contextos/Provid'
 
 const Idiomas = () => {
   const {setAlumno}=useContext(Contextoo)
@@ -11,7 +11,7 @@ const Idiomas = () => {
   const sustitucion =(posicion)=>{
     setAlumno(
       alumno.map((dato, indice)=>
-        indice==3
+        indice===3
         ?{...dato, idioma:posicion}
         :{...dato}
       )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fragment } from 'react'
+//import { Fragment } from 'react'
 
 const Atanagildo = ({reyes}) => { 
   const resultado =reyes.filter(e=>e.nombre.includes("Atanagildo")).map(e=> 

@@ -5,8 +5,8 @@ import Contexto  from '../contextos/Contextoo'
 const Profesora = () => {
   const {alumno} = useContext(Contexto)
   const idioma = alumno[3].idioma;
-  const imagen =`../src/CompoJAB/images/${alumno[idioma].foto}`
-  const image = `./images/${alumno[idioma].foto}`
+  //const imagen =`../src/CompoJAB/images/${alumno[idioma].foto}`
+  //const image = `./images/${alumno[idioma].foto}`
   return (
     <div className='profesora'>
       <h1>{alumno[idioma].boton1} </h1>

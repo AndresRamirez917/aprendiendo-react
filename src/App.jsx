@@ -48,7 +48,7 @@ import A from "./CompoJAB/Paginas/A";
 import B from "./CompoJAB/Paginas/B";
 import C from "./CompoJAB/Paginas/C";
 import D from "./CompoJAB/Paginas/D";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 import Error404 from "./CompoJAB/Paginas/Error404";
 import Nav from "./CompoJAB/Paginas/Nav";
 //mismo ejercicio
@@ -70,6 +70,13 @@ import Modelo from "./CompoJAB/SPAReyes2/Modelo"
 import Calendario from "./CompoJAB/UseReducerUnidad9/Calendario";
 
 import Productos from "./CompoJAB/UseReducerUnidad9/Productos";
+
+import Router from "./CompoJAB/EjersUnid10/Ejer1/Routers/Router";
+import Provider from "./CompoJAB/EjersUnid10/Ejer1/Context/Provider";
+
+import Homme from "../src/CompoJAB/EjersUnid10/Ejer2/Homme"
+import Route1 from "../src/CompoJAB/EjersUnid10/Ejer2/Routes/Route1"
+import Provider1 from "../src/CompoJAB/EjersUnid10/Ejer2/Context/Provider1";
 
 const App = () =>{
     
@@ -133,6 +140,31 @@ vacasConsumidas: 9
 }]
     return(
         <Fragment>
+
+<div>
+    <BrowserRouter>
+    <Provider1>
+   <Route1/>
+   </Provider1>
+   </BrowserRouter>
+</div>
+
+
+
+
+            {/* <div>
+                <BrowserRouter>
+                <Provider>
+                <Router/>
+                </Provider>
+                </BrowserRouter>
+            </div> */}
+
+            <div className="divisaStyle">
+            <CamDivisasUnidad3 />
+            </div>
+
+
             <div className="stylesProductos">
             <Productos/>
             </div>
@@ -202,7 +234,8 @@ vacasConsumidas: 9
 
             <div>
                 <EjerFETCH4Unidad6 />
-                <h1>No pude hacerlo funcionar <span role="img" aria-label="">👆</span></h1>
+                <h1>Uso de fetch, useState, useEffect y spread operator para
+                    almacenado de un json en un array <span role="img" aria-label="">👆</span></h1>
             </div>
 
             <div>
@@ -255,9 +288,7 @@ vacasConsumidas: 9
                 <h1>Envío de datos de un array de objetos desde la importación del componente, uso de props, inline style, función flecha dentro de una función flecha</h1>
             </div>
             
-            <div className="divisaStyle">
-            <CamDivisasUnidad3 />
-            </div>
+            
 
             <div className="afiReyesStyles">
             <AfiReyesUnidad3 />
