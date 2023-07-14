@@ -2,7 +2,7 @@ const data = [
     {
        'nombre':'Cafayate',
        'zona':'no',
-       'imagen':'https://www.html6.es/reyes.atanagildo.png',
+       'imagen':'cafayate.jpg',
        'situacion':'Localidad de los valles Calchaquíes de la provincia de Salta.',
        'servicio':'Visita a las formaciones de roca caliza y viñedos',
        'precio':90
@@ -47,14 +47,7 @@ const data = [
        'servicio':"Recorrido por los diferentes senderos (Macuco..)",
        'precio':172
     },
-    {
-       'nombre':'San Nicolás de los Arroyos',
-       'zona':'no',
-       'imagen':'san_nicolas_de_los_arroyos.jpg',
-       'situacion':'Extremo norte de la Provincia de Buenos Aires.',
-       'servicio':"Escapada a Santuario, Teatro, Parque y Catedral",
-       'precio':82
-    },
+
     {
        'nombre':'Rosario',
        'zona':'no',
@@ -62,6 +55,14 @@ const data = [
        'situacion':'Sureste de la Provincia de Santa Fé del Departamento de Rosario.',
        'servicio':"Recorrido por el Monumento, museos y parques",
        'precio':79
+    },
+        {
+       'nombre':'San Nicolás de los Arroyos',
+       'zona':'no',
+       'imagen':'sannicolasdelosarrayos.jpg',
+       'situacion':'Extremo norte de la Provincia de Buenos Aires.',
+       'servicio':"Escapada a Santuario, Teatro, Parque y Catedral",
+       'precio':82
     },
     {
        'nombre':'Córdoba',

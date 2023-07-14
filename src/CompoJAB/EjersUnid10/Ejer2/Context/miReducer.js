@@ -1,7 +1,7 @@
 import React from 'react'
 import types from './Types'
 
-const miReducer = (state , action) => {
+const miReducer = (state = {} , action) => {
   switch (action.type){
     case types.login:
         return {

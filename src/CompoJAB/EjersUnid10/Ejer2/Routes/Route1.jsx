@@ -11,8 +11,8 @@ const Route1 = () => {
   return (
   <Fragment>
     <Routes>
-        <Route path="login" element={<RutaPublica1><Login/></RutaPublica1>}/>
-        <Route path="/*" element={<RutaPrivada1><Route2/></RutaPrivada1>}/>
+        <Route path='login' element={<RutaPublica1><Login/></RutaPublica1>}/>
+        <Route path='/*' element={<RutaPrivada1><Route2/></RutaPrivada1>}/>
     </Routes>
   </Fragment>    
   )

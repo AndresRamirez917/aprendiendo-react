@@ -1,6 +1,8 @@
 const types ={
     login:"login",
-    logout:"logout"
+    logout:"logout",
+    contratar:"contratar",
+    anular:"anular"
 }
 
 export default types

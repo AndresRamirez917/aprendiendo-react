@@ -19,7 +19,7 @@ const NavBar1 = () => {
             <div>
             <NavLink className="activeishon2" to="cp">Capital y Patagonia</NavLink>
             <NavLink className="activeishon2" to="no">Norte y Oeste</NavLink>
-            <NavLink className="activeishon2" to="login">Login</NavLink>
+            <NavLink className="activeishon2" to="viaje">Mi viaje</NavLink>
             </div>
             <button onClick={logoutt}>Logout</button>
         </nav>

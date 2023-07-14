@@ -1,21 +1,36 @@
-import React, { useContext } from 'react'
-import { useNavigate } from 'react-router-dom'
-import Contexto from '../Context/Contexto'
+import React, { Fragment, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import Contexto from "../Context/Contexto";
 
 const Login = () => {
-  const {logueado} = useContext(Contexto)
-  const navegacion = useNavigate()
-  const loginn = () =>{
-    logueado()
-    navegacion('/',{replace:true})
-  }
+  const { logueado, setReferencia } = useContext(Contexto);
+  const navegacion = useNavigate();
+  const loginn = () => {
+    logueado("andres");
+    navegacion('/', { replace: true });
+  };
+
+  const registro = (e) => {
+    setReferencia(e.currentTarget.value);
+  };
   return (
-    <div>
-      <h1>Login</h1>
-      <button onClick={loginn}>Login</button>
+    <Fragment>
+      <section className="login">
+        <h1>Vive el país</h1>
+        <label htmlFor="referencia">Referencia:</label>
+        <input
+          id="referencia"
+          onChange={registro}
+          placeholder="Referencia de tu billete"
+          autoFocus
+          autoComplete="off"
+        />
+        <button className="registro" onClick={loginn}>
+          Login
+        </button>
+      </section>
+    </Fragment>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Login
+export default Login;
